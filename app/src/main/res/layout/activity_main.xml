@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:background="@drawable/bg"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.sql_project.MainActivity">
+
+
+    <EditText
+        android:padding="25dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:ems="10"
+        android:id="@+id/edittext_name"
+        android:layout_marginStart="25dp" />
+
+    <EditText
+        android:padding="25dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="SurName"
+        android:ems="10"
+        android:id="@+id/edittext_surname"
+        android:layout_below="@id/edittext_name"
+        android:layout_marginStart="25dp" />
+
+    <EditText
+        android:padding="25dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        android:ems="10"
+        android:id="@+id/edittext_AGE"
+        android:layout_below="@id/edittext_surname"
+        android:layout_marginStart="25dp" />
+    <EditText
+        android:padding="25dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="id"
+        android:ems="10"
+        android:id="@+id/edittext_id"
+        android:layout_below="@id/edittext_AGE"
+        android:layout_marginStart="25dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/button_add"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/edittext_id"
+        android:layout_alignStart="@+id/edittext_id" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Show All"
+        android:id="@+id/button_viewAll"
+        android:layout_alignTop="@+id/button_add"
+        android:layout_toEndOf="@+id/button_add"
+        android:layout_marginStart="44dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:id="@+id/update"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/button_add"
+        android:layout_alignStart="@+id/button_add" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove"
+        android:id="@+id/delete"
+        android:layout_alignBottom="@+id/update"
+        android:layout_alignStart="@+id/button_viewAll"
+        android:layout_alignEnd="@+id/button_viewAll" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search by Name"
+        android:id="@+id/show"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/update"
+        android:layout_alignStart="@+id/update"
+        android:layout_alignEnd="@+id/delete" />
+</RelativeLayout>
